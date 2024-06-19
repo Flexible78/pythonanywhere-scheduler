@@ -1,0 +1,13 @@
+name: Run Script on PythonAnywhere
+
+on:
+  schedule:
+    - cron: '0 0,8,16 * * *'  # Запуск каждый день в полночь, 8 утра и 4 вечера UTC
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send request to run script on PythonAnywhere
+        run: curl https://Alx21.pythonanywhere.com/run-script
