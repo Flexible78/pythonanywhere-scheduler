@@ -2,7 +2,7 @@ name: Run Script on PythonAnywhere
 
 on:
   schedule:
-    - cron: '0 0,8,16 * * *'  # Запуск каждый день в полночь, 8 утра и 4 вечера UTC
+    - cron: '30 */2 * * *'  # Запуск каждый 2 часа, начиная с 0:30
 
 jobs:
   run-script:
