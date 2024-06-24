@@ -2,7 +2,7 @@ name: Run Script on PythonAnywhere
 
 on:
   schedule:
-     - cron: '48 */2 * * *'  # Запуск каждые 2 часа в 48 минут
+     №- cron: '48 */2 * * *'  # Запуск каждые 2 часа в 48 минут
      
      
 jobs:
